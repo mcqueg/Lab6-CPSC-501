@@ -1,0 +1,47 @@
+//********************************************************************
+// Garrett McCue 	
+//
+// 8/13/20
+//
+// CPSC-501-Lab6Ex4
+//**********************************************************************
+
+Assume a binary search is performed on the following array of integers:
+
+{1, 14, 15, 24, 55, 59, 73, 90, 94, 99}
+
+For each iteration of the algorithm write the number that will be 
+the middle element and the left and right bounds (indexes), when 
+searching for the number 73.
+
+indexes are reported
+
+
+iteration 1:
+
+{1, 14, 15, 24, 55, 59, 73, 90, 94, 99}
+middle: [4]
+left: [0]
+right: [9]
+
+
+iteration 2:
+
+{59, 73, 90, 94, 99,}
+middle: [7]
+left: [5]
+right: [9]
+
+iteration 3:
+
+{59, 73}
+middle: [5]
+left: [5]
+right: [6]
+
+iteration 4:
+
+{73}
+middle: [6]
+left: [6]
+right: [6]
