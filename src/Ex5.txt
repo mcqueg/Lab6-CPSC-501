@@ -1,0 +1,57 @@
+//********************************************************************
+// Garrett McCue 	
+//
+// 8/13/20
+//
+// CPSC-501-Lab6Ex5
+//**********************************************************************
+Trace the execution of the insertion and selection sort algorithms when 
+executed on the following array of integers:
+{1, 29, 14, 15, 94}
+
+Show how the array will look like after each iteration of the outer loop.
+
+
+Insertion
+
+	iteration 1: 
+	//compares 1 and 29. Nothing happens since 1 is less than 29
+	{1, 29, 14, 15, 94} 
+	
+	iteration 2:
+	// compares 29 and 14. 14 moves between 1 and 29 since it is 
+	// smaller than 29 but larger than 1
+	{1, 14, 29, 15, 94}
+	
+	iteration 3:
+	// compares 29 and 15. 15 moves between 14 and 29 because it 
+	// is larger than 14 but smaller than 29
+	{1, 14, 15, 29, 94}
+	
+	iteration 4:
+	// compares 29 and 94 but nothing happens since 29 is smaller than 94
+	{1, 14, 15, 29, 94}
+	
+Selection
+
+	iteration 1:
+	// replaces [0] with the smallest value, nothing happens since 1 is the smallest
+	{1, 29, 14, 15, 94}
+	
+	iteration 2:
+	// replace [1] with the remaining smallest value, 14 and 29 swap 
+	{1, 14, 29, 15, 94}
+	
+	iteration 3:
+	// replace [2] with the remaining smallest value 29 and 15 swap
+	{1, 14, 15, 29, 94}
+	
+	iteration 4:
+	// replace [3] with the remaining smallest value, nothing happens since there is no value 
+	// to the right that is smaller than 29
+	{1, 14, 15, 29, 94}
+	
+	iteration 5:
+	// replace [4] with the remaining smallest value, nothing happens since it is the last value 
+	// so there are no values smaller than it.
+	{1, 14, 15, 29, 94}
